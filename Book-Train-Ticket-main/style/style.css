@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #33475b;
+}
+
+nav {
+  height: 2rem;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0rem 0.25rem;
+  font-weight: 600;
+}
+
+/* Settings: Filter and Sort section */
+.settings {
+  max-width: 80vw;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gray;
+  margin: 0rem 0rem 1rem 0rem;
+  box-shadow: 0rem 0.25rem 0.25rem;
+  border-radius: 1rem;
+}
+
+.settings select {
+  color: white;
+  min-width: 5rem;
+  font-weight: bold;
+  border: 0.1rem solid white;
+  background-color: transparent;
+}
+
+.settings select option {
+  color: black;
+  font-weight: bold;
+}
+
+.filter-seats {
+  margin: 0.5rem 1rem;
+}
+
+.sort-age {
+  margin: 0.5rem 1rem;
+}
+
+.sort-date {
+  margin: 0.5rem 1rem;
+}
+
+/* Registration */
+form {
+  padding: 0rem 1rem;
+  background-color: ghostwhite;
+}
+
+fieldset {
+  padding: 1rem;
+  border: 0 solid black;
+}
+
+input {
+  width: 100%;
+  height: 1.25rem;
+  margin: 0.10rem 0rem;
+  padding: 0rem 0rem 0rem 0.25rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 0.1rem solid black;
+}
+
+select {
+  background-color: transparent;
+  border-style: none;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+}
+
+legend {
+  text-align: center;
+}
+
+.from-to {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+#date {
+  cursor: pointer;
+}
+
+#seat-type {
+  margin: 0.10rem 0rem 1rem 0rem;
+  width: 100%;
+}
+
+#from,
+#to,
+#seat-type {
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+#submit-btn {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 1.5rem;
+  border-style: solid;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#delete-db-btn {
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  margin: 0.25rem 0rem;
+  transition: 1s ease-in-out;
+  font-weight: bold;
+}
+
+#delete-db-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Dashboard */
+.header {
+  margin: 1rem 0rem;
+}
+
+.options {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 0rem 0.25rem 0.25rem;
+}
+
+th,
+td {
+  border: 0.01rem solid black;
+  padding: 0.25rem 0.50rem;
+  text-align: center;
+}
+
+#dashboard-thead {
+  background-color: gray;
+}
+
+#dashboard-tbody {
+  background-color: yellow;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.reject-btn {
+  color: white;
+  background-color: red;
+  border-style: solid;
+  width: 100%;
+  height: 1.25rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reject-btn:active {
+  background-color: white;
+  color: red;
+}
+
+.confirm-btn {
+  color: white;
+  background-color: green;
+  border-style: solid;
+  width: 100%;
+  height: 1.25rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confirm-btn:active {
+  background-color: white;
+  color: green;
+}
+
+/* Booking */
+#booking-thead {
+  background-color: gray;
+}
+
+#booking-tbody {
+  background-color: aqua;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Booking App</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html" class="nav-link">Registration</a></li>
+      <li><a href="./dashboard.html" class="nav-link">Dashboard</a></li>
+      <li><a href="./booking.html" class="nav-link">Bookings</a></li>
+    </ul>
+  </nav>
+  <!-- Navbar End -->
+
+  <section class="header">
+    <h1>Dashboard</h1>
+  </section>
+
+  <section class="settings">
+    <section class="filter-seats">
+      <label for="filter-by-seat"><b>Filter by Seat Types</b></label>
+      <select id="filter-by-seat" name="filter-by-seat">
+        <option value="All">All</option>
+        <option value="General Class">General Class</option>
+        <option value="Sleeper Class">Sleeper Class</option>
+        <option value="Second Class">Second Class</option>
+        <option value="First Class">First Class</option>
+      </select>
+    </section>
+
+    <section class="sort-age">
+      <label for="sort-by-age"><b>Sort by Age</b></label>
+      <select id="sort-by-age" name="sort-by-age">
+        <option value="ascending">Ascending</option>
+        <option value="descending">Descending</option>
+      </select>
+    </section>
+
+    <section class="sort-date">
+      <label for="sort-by-date"><b>Sort by Date</b></label>
+      <select id="sort-by-date" name="sort-by-date">
+        <option value="ascending">Ascending</option>
+        <option value="descending">Descending</option>
+      </select>
+    </section>
+  </section>
+
+
+  <table>
+    <thead id="dashboard-thead">
+      <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Journey Date</th>
+        <th>Seat Type</th>
+        <th>Reject Booking</th>
+        <th>Confirm Booking</th>
+      </tr>
+    </thead>
+    <tbody id="dashboard-tbody">
+      <!-- <tr>
+        <td></td>
+      </tr> -->
+    </tbody>
+  </table>
+
+</body>
+<script defer src="../script/dashboard.js"></script>
+
+</html>

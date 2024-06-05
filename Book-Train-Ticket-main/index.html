@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Booking App</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html" class="nav-link">Registration</a></li>
+      <li><a href="./views/dashboard.html" class="nav-link">Dashboard</a></li>
+      <li><a href="./views/booking.html" class="nav-link">Bookings</a></li>
+    </ul>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Main Content Start -->
+  <form>
+    <fieldset>
+      <legend>`
+        <h1>Registration</h1>
+      </legend>
+
+      <label for="id"><b>ID</b></label><br>
+      <input type="text" name="id" id="id" placeholder="Enter Unique ID" required><br><br>
+
+      <label for="name"><b>Name</b></label><br>
+      <input type="text" name="name" id="name" placeholder="Enter Name" required autocomplete="on"><br><br>
+
+      <label for="age"><b>Age</b></label><br>
+      <input type="number" min="13" max="150" name="age" id="age" placeholder="Enter Age" required><br><br>
+
+      <section class="from-to">
+
+        <label for="from"><b>From</b></label>
+        <select id="from" name="from">
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Hyderabad">Hyderabad</option>
+        </select>
+
+        <span><b>&nbsp;&nbsp;:&nbsp;&nbsp;</b></span>
+
+        <label for="to"><b>To</b></label>
+        <select id="to" name="to">
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Hyderabad">Hyderabad</option>
+        </select>
+
+      </section>
+
+      <label for="date"><b>Date</b></label><br>
+      <input type="date" name="date" id="date" placeholder="Enter Unique ID" required><br><br>
+
+      <label for="seat-type"><b>Select Seat Type</b></label><br>
+      <select id="seat-type" name="seat-type">
+        <option value="General Class">General Class</option>
+        <option value="Sleeper Class">Sleeper Class</option>
+        <option value="Second Class">Second Class</option>
+        <option value="First Class">First Class</option>
+      </select><br>
+      <button type="submit" id="submit-btn">Register</button>
+    </fieldset>
+    <button id="delete-db-btn">⚠️ Empty Local Storage ⚠️</button>
+  </form>
+
+  <script defer src="./script/register.js"></script>
+</body>
+
+</html>
